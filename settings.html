@@ -1,0 +1,592 @@
+<html>
+	<head>
+		<title>FantasyRig Settings</title>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="submitDiv">
+				<h5 id='saveSuccess' class="text-center"></h5>
+				<div class="text-center">
+					<button type="button" id="save" class="btn btn-lg btn-success" disabled>
+						Submit Changes (make a change to enable)
+					</button>
+					<a href="install.html#faq" target="_blank" class="btn btn-lg btn-info">FAQ</a>
+				</div>
+			</div>
+			<hr>
+
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#rosSource" aria-expanded="true" aria-controls="rosSource">
+                ROS Projection Source
+              </a>
+            </h5>
+          </div>
+          <div id="rosSource" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+              <div id='sourceRadios' class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary">
+                  <input type="radio" name="rosSourceRadio" id="depthCharts" value="depthCharts" autocomplete="off" checked>Depth Charts
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="rosSourceRadio" value="steamer" autocomplete="off">Steamer
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="rosSourceRadio" value="zips" autocomplete="off">ZiPS
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#rosBat" aria-expanded="false" aria-controls="rosBat">
+                ROS Hitting
+              </a>
+            </h5>
+          </div>
+          <div id="rosBat" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-block">
+              <ul class="list-group">
+                <div class="row">
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FP/G'><span class="custom-control-indicator"></span><span class="custom-control-description">FP/G</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FP'><span class="custom-control-indicator"></span><span class="custom-control-description">FP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='G'><span class="custom-control-indicator"></span><span class="custom-control-description">G</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='PA'><span class="custom-control-indicator"></span><span class="custom-control-description">PA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='AB'><span class="custom-control-indicator"></span><span class="custom-control-description">AB</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='H'><span class="custom-control-indicator"></span><span class="custom-control-description">H</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='2B'><span class="custom-control-indicator"></span><span class="custom-control-description">2B</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='3B'><span class="custom-control-indicator"></span><span class="custom-control-description">3B</span></li>
+
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR'><span class="custom-control-indicator"></span><span class="custom-control-description">HR</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='R'><span class="custom-control-indicator"></span><span class="custom-control-description">R</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='RBI'><span class="custom-control-indicator"></span><span class="custom-control-description">RBI</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB'><span class="custom-control-indicator"></span><span class="custom-control-description">BB</span></li>
+
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SO'><span class="custom-control-indicator"></span><span class="custom-control-description">SO</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HBP'><span class="custom-control-indicator"></span><span class="custom-control-description">HBP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SB'><span class="custom-control-indicator"></span><span class="custom-control-description">SB</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='CS'><span class="custom-control-indicator"></span><span class="custom-control-description">CS</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='AVG'><span class="custom-control-indicator"></span><span class="custom-control-description">AVG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='OBP'><span class="custom-control-indicator"></span><span class="custom-control-description">OBP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SLG'><span class="custom-control-indicator"></span><span class="custom-control-description">SLG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='OPS'><span class="custom-control-indicator"></span><span class="custom-control-description">OPS</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wOBA'><span class="custom-control-indicator"></span><span class="custom-control-description">wOBA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Fld'><span class="custom-control-indicator"></span><span class="custom-control-description">Fld</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BsR'><span class="custom-control-indicator"></span><span class="custom-control-description">BsR</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='WAR'><span class="custom-control-indicator"></span><span class="custom-control-description">WAR</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='TB'><span class="custom-control-indicator"></span><span class="custom-control-description">TB</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#rosPitch" aria-expanded="false" aria-controls="rosPitch">
+                ROS Pitching
+              </a>
+            </h5>
+          </div>
+          <div id="rosPitch" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="card-block">
+              <ul class="list-group">
+                <div class="row">
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FP/G'><span class="custom-control-indicator"></span><span class="custom-control-description">FP/G</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FP'><span class="custom-control-indicator"></span><span class="custom-control-description">FP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='W'><span class="custom-control-indicator"></span><span class="custom-control-description">W</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='L'><span class="custom-control-indicator"></span><span class="custom-control-description">L</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SV'><span class="custom-control-indicator"></span><span class="custom-control-description">SV</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HLD'><span class="custom-control-indicator"></span><span class="custom-control-description">HLD</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ERA'><span class="custom-control-indicator"></span><span class="custom-control-description">ERA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GS'><span class="custom-control-indicator"></span><span class="custom-control-description">GS</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='G'><span class="custom-control-indicator"></span><span class="custom-control-description">G</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IP'><span class="custom-control-indicator"></span><span class="custom-control-description">IP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='H'><span class="custom-control-indicator"></span><span class="custom-control-description">H</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ER'><span class="custom-control-indicator"></span><span class="custom-control-description">ER</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR'><span class="custom-control-indicator"></span><span class="custom-control-description">HR</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SO'><span class="custom-control-indicator"></span><span class="custom-control-description">SO</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB'><span class="custom-control-indicator"></span><span class="custom-control-description">BB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='WHIP'><span class="custom-control-indicator"></span><span class="custom-control-description">WHIP</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K/9'><span class="custom-control-indicator"></span><span class="custom-control-description">K/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB/9'><span class="custom-control-indicator"></span><span class="custom-control-description">BB/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FIP'><span class="custom-control-indicator"></span><span class="custom-control-description">FIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='WAR'><span class="custom-control-indicator"></span><span class="custom-control-description">WAR</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingFour">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#currBat" aria-expanded="false" aria-controls="currBat">
+                2017 Hitting
+              </a>
+            </h5>
+          </div>
+
+          <div id="currBat" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="card-block">
+              <ul class="list-group">
+                <div class="row">
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='PA'><span class="custom-control-indicator"></span><span class="custom-control-description">PA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K%'><span class="custom-control-indicator"></span><span class="custom-control-description">K%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB/K'><span class="custom-control-indicator"></span><span class="custom-control-description">BB/K</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='AVG'><span class="custom-control-indicator"></span><span class="custom-control-description">AVG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='OBP'><span class="custom-control-indicator"></span><span class="custom-control-description">OBP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SLG'><span class="custom-control-indicator"></span><span class="custom-control-description">SLG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='OPS'><span class="custom-control-indicator"></span><span class="custom-control-description">OPS</span></li>
+                  
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ISO'><span class="custom-control-indicator"></span><span class="custom-control-description">ISO</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Spd'><span class="custom-control-indicator"></span><span class="custom-control-description">Spd</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BABIP'><span class="custom-control-indicator"></span><span class="custom-control-description">BABIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='UBR'><span class="custom-control-indicator"></span><span class="custom-control-description">UBR</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wGDP'><span class="custom-control-indicator"></span><span class="custom-control-description">wGDP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wSB'><span class="custom-control-indicator"></span><span class="custom-control-description">wSB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRC'><span class="custom-control-indicator"></span><span class="custom-control-description">wRC</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRAA'><span class="custom-control-indicator"></span><span class="custom-control-description">wRAA</span></li>
+
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wOBA'><span class="custom-control-indicator"></span><span class="custom-control-description">wOBA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRC+'><span class="custom-control-indicator"></span><span class="custom-control-description">wRC+</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">GB/FB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LD%'><span class="custom-control-indicator"></span><span class="custom-control-description">LD%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB%'><span class="custom-control-indicator"></span><span class="custom-control-description">GB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FB%'><span class="custom-control-indicator"></span><span class="custom-control-description">FB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFFB%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFFB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/FB</span></li>
+
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFH'><span class="custom-control-indicator"></span><span class="custom-control-description">IFH</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFH%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFH%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BUH'><span class="custom-control-indicator"></span><span class="custom-control-description">BUH</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BUH%'><span class="custom-control-indicator"></span><span class="custom-control-description">BUH%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pull%'><span class="custom-control-indicator"></span><span class="custom-control-description">Pull%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Cent%'><span class="custom-control-indicator"></span><span class="custom-control-description">Cent%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Oppo%'><span class="custom-control-indicator"></span><span class="custom-control-description">Oppo%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Soft%'><span class="custom-control-indicator"></span><span class="custom-control-description">Soft%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Med%'><span class="custom-control-indicator"></span><span class="custom-control-description">Med%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Hard%'><span class="custom-control-indicator"></span><span class="custom-control-description">Hard%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Contact%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Zone%'><span class="custom-control-indicator"></span><span class="custom-control-description">Zone%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='F-Strike%'><span class="custom-control-indicator"></span><span class="custom-control-description">F-Strike%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SwStr%'><span class="custom-control-indicator"></span><span class="custom-control-description">SwStr%</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingFive">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#currPitch" aria-expanded="false" aria-controls="currPitch">
+                2017 Pitching
+              </a>
+            </h5>
+          </div>
+          <div id="currPitch" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="card-block">
+              <ul class="list-group">
+                <div class="row">
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K/9'><span class="custom-control-indicator"></span><span class="custom-control-description">K/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB/9'><span class="custom-control-indicator"></span><span class="custom-control-description">BB/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K/BB'><span class="custom-control-indicator"></span><span class="custom-control-description">K/BB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/9'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K%'><span class="custom-control-indicator"></span><span class="custom-control-description">K%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K-BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">K-BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='AVG'><span class="custom-control-indicator"></span><span class="custom-control-description">AVG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='WHIP'><span class="custom-control-indicator"></span><span class="custom-control-description">WHIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BABIP'><span class="custom-control-indicator"></span><span class="custom-control-description">BABIP</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LOB%'><span class="custom-control-indicator"></span><span class="custom-control-description">LOB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ERA-'><span class="custom-control-indicator"></span><span class="custom-control-description">ERA-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FIP-'><span class="custom-control-indicator"></span><span class="custom-control-description">FIP-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='xFIP-'><span class="custom-control-indicator"></span><span class="custom-control-description">xFIP-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ERA'><span class="custom-control-indicator"></span><span class="custom-control-description">ERA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FIP'><span class="custom-control-indicator"></span><span class="custom-control-description">FIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='E-F'><span class="custom-control-indicator"></span><span class="custom-control-description">E-F</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='xFIP'><span class="custom-control-indicator"></span><span class="custom-control-description">xFIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SIERA'><span class="custom-control-indicator"></span><span class="custom-control-description">SIERA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">GB/FB</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LD%'><span class="custom-control-indicator"></span><span class="custom-control-description">LD%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB%'><span class="custom-control-indicator"></span><span class="custom-control-description">GB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FB%'><span class="custom-control-indicator"></span><span class="custom-control-description">FB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFFB%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFFB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/FB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='RS'><span class="custom-control-indicator"></span><span class="custom-control-description">RS</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='RS/9'><span class="custom-control-indicator"></span><span class="custom-control-description">RS/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Balls'><span class="custom-control-indicator"></span><span class="custom-control-description">Balls</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Strikes'><span class="custom-control-indicator"></span><span class="custom-control-description">Strikes</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pitches'><span class="custom-control-indicator"></span><span class="custom-control-description">Pitches</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pull%'><span class="custom-control-indicator"></span><span class="custom-control-description">Pull%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Cent%'><span class="custom-control-indicator"></span><span class="custom-control-description">Cent%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Oppo%'><span class="custom-control-indicator"></span><span class="custom-control-description">Oppo%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Soft%'><span class="custom-control-indicator"></span><span class="custom-control-description">Soft%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Med%'><span class="custom-control-indicator"></span><span class="custom-control-description">Med%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Hard%'><span class="custom-control-indicator"></span><span class="custom-control-description">Hard%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Contact%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Zone%'><span class="custom-control-indicator"></span><span class="custom-control-description">Zone%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='F-Strike%'><span class="custom-control-indicator"></span><span class="custom-control-description">F-Strike%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SwStr%'><span class="custom-control-indicator"></span><span class="custom-control-description">SwStr%</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingSix">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#lastBat" aria-expanded="false" aria-controls="lastBat">
+                2016 Hitting
+              </a>
+            </h5>
+          </div>
+          <div id="lastBat" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+            <div class="card-block">
+              <ul class="list-group">
+                <div class="row">
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='PA'><span class="custom-control-indicator"></span><span class="custom-control-description">PA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K%'><span class="custom-control-indicator"></span><span class="custom-control-description">K%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB/K'><span class="custom-control-indicator"></span><span class="custom-control-description">BB/K</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='AVG'><span class="custom-control-indicator"></span><span class="custom-control-description">AVG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='OBP'><span class="custom-control-indicator"></span><span class="custom-control-description">OBP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SLG'><span class="custom-control-indicator"></span><span class="custom-control-description">SLG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='OPS'><span class="custom-control-indicator"></span><span class="custom-control-description">OPS</span></li>
+                  
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ISO'><span class="custom-control-indicator"></span><span class="custom-control-description">ISO</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Spd'><span class="custom-control-indicator"></span><span class="custom-control-description">Spd</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BABIP'><span class="custom-control-indicator"></span><span class="custom-control-description">BABIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='UBR'><span class="custom-control-indicator"></span><span class="custom-control-description">UBR</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wGDP'><span class="custom-control-indicator"></span><span class="custom-control-description">wGDP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wSB'><span class="custom-control-indicator"></span><span class="custom-control-description">wSB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRC'><span class="custom-control-indicator"></span><span class="custom-control-description">wRC</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRAA'><span class="custom-control-indicator"></span><span class="custom-control-description">wRAA</span></li>
+
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wOBA'><span class="custom-control-indicator"></span><span class="custom-control-description">wOBA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRC+'><span class="custom-control-indicator"></span><span class="custom-control-description">wRC+</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">GB/FB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LD%'><span class="custom-control-indicator"></span><span class="custom-control-description">LD%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB%'><span class="custom-control-indicator"></span><span class="custom-control-description">GB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FB%'><span class="custom-control-indicator"></span><span class="custom-control-description">FB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFFB%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFFB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/FB</span></li>
+
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFH'><span class="custom-control-indicator"></span><span class="custom-control-description">IFH</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFH%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFH%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BUH'><span class="custom-control-indicator"></span><span class="custom-control-description">BUH</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BUH%'><span class="custom-control-indicator"></span><span class="custom-control-description">BUH%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pull%'><span class="custom-control-indicator"></span><span class="custom-control-description">Pull%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Cent%'><span class="custom-control-indicator"></span><span class="custom-control-description">Cent%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Oppo%'><span class="custom-control-indicator"></span><span class="custom-control-description">Oppo%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Soft%'><span class="custom-control-indicator"></span><span class="custom-control-description">Soft%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Med%'><span class="custom-control-indicator"></span><span class="custom-control-description">Med%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Hard%'><span class="custom-control-indicator"></span><span class="custom-control-description">Hard%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Contact%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Zone%'><span class="custom-control-indicator"></span><span class="custom-control-description">Zone%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='F-Strike%'><span class="custom-control-indicator"></span><span class="custom-control-description">F-Strike%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SwStr%'><span class="custom-control-indicator"></span><span class="custom-control-description">SwStr%</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingSeven">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#lastPitch" aria-expanded="false" aria-controls="lastPitch">
+                2016 Pitching
+              </a>
+            </h5>
+          </div>
+
+          <div id="lastPitch" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+            <div class="card-block">
+              <ul class="list-group">
+                <div class="row">
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K/9'><span class="custom-control-indicator"></span><span class="custom-control-description">K/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB/9'><span class="custom-control-indicator"></span><span class="custom-control-description">BB/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K/BB'><span class="custom-control-indicator"></span><span class="custom-control-description">K/BB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/9'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K%'><span class="custom-control-indicator"></span><span class="custom-control-description">K%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K-BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">K-BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='AVG'><span class="custom-control-indicator"></span><span class="custom-control-description">AVG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='WHIP'><span class="custom-control-indicator"></span><span class="custom-control-description">WHIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BABIP'><span class="custom-control-indicator"></span><span class="custom-control-description">BABIP</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LOB%'><span class="custom-control-indicator"></span><span class="custom-control-description">LOB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ERA-'><span class="custom-control-indicator"></span><span class="custom-control-description">ERA-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FIP-'><span class="custom-control-indicator"></span><span class="custom-control-description">FIP-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='xFIP-'><span class="custom-control-indicator"></span><span class="custom-control-description">xFIP-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ERA'><span class="custom-control-indicator"></span><span class="custom-control-description">ERA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FIP'><span class="custom-control-indicator"></span><span class="custom-control-description">FIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='E-F'><span class="custom-control-indicator"></span><span class="custom-control-description">E-F</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='xFIP'><span class="custom-control-indicator"></span><span class="custom-control-description">xFIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SIERA'><span class="custom-control-indicator"></span><span class="custom-control-description">SIERA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">GB/FB</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LD%'><span class="custom-control-indicator"></span><span class="custom-control-description">LD%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB%'><span class="custom-control-indicator"></span><span class="custom-control-description">GB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FB%'><span class="custom-control-indicator"></span><span class="custom-control-description">FB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFFB%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFFB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/FB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='RS'><span class="custom-control-indicator"></span><span class="custom-control-description">RS</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='RS/9'><span class="custom-control-indicator"></span><span class="custom-control-description">RS/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Balls'><span class="custom-control-indicator"></span><span class="custom-control-description">Balls</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Strikes'><span class="custom-control-indicator"></span><span class="custom-control-description">Strikes</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pitches'><span class="custom-control-indicator"></span><span class="custom-control-description">Pitches</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pull%'><span class="custom-control-indicator"></span><span class="custom-control-description">Pull%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Cent%'><span class="custom-control-indicator"></span><span class="custom-control-description">Cent%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Oppo%'><span class="custom-control-indicator"></span><span class="custom-control-description">Oppo%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Soft%'><span class="custom-control-indicator"></span><span class="custom-control-description">Soft%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Med%'><span class="custom-control-indicator"></span><span class="custom-control-description">Med%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Hard%'><span class="custom-control-indicator"></span><span class="custom-control-description">Hard%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Contact%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Zone%'><span class="custom-control-indicator"></span><span class="custom-control-description">Zone%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='F-Strike%'><span class="custom-control-indicator"></span><span class="custom-control-description">F-Strike%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SwStr%'><span class="custom-control-indicator"></span><span class="custom-control-description">SwStr%</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingSeven">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#threeBat" aria-expanded="false" aria-controls="threeBat">
+                3-year Hitting
+              </a>
+            </h5>
+          </div>
+          <div id="threeBat" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+            <div class="card-block">
+              <ul class="list-group">
+                <div class="row">
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='PA'><span class="custom-control-indicator"></span><span class="custom-control-description">PA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K%'><span class="custom-control-indicator"></span><span class="custom-control-description">K%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB/K'><span class="custom-control-indicator"></span><span class="custom-control-description">BB/K</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='AVG'><span class="custom-control-indicator"></span><span class="custom-control-description">AVG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='OBP'><span class="custom-control-indicator"></span><span class="custom-control-description">OBP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SLG'><span class="custom-control-indicator"></span><span class="custom-control-description">SLG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='OPS'><span class="custom-control-indicator"></span><span class="custom-control-description">OPS</span></li>
+                  
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ISO'><span class="custom-control-indicator"></span><span class="custom-control-description">ISO</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Spd'><span class="custom-control-indicator"></span><span class="custom-control-description">Spd</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BABIP'><span class="custom-control-indicator"></span><span class="custom-control-description">BABIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='UBR'><span class="custom-control-indicator"></span><span class="custom-control-description">UBR</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wGDP'><span class="custom-control-indicator"></span><span class="custom-control-description">wGDP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wSB'><span class="custom-control-indicator"></span><span class="custom-control-description">wSB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRC'><span class="custom-control-indicator"></span><span class="custom-control-description">wRC</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRAA'><span class="custom-control-indicator"></span><span class="custom-control-description">wRAA</span></li>
+
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wOBA'><span class="custom-control-indicator"></span><span class="custom-control-description">wOBA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='wRC+'><span class="custom-control-indicator"></span><span class="custom-control-description">wRC+</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">GB/FB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LD%'><span class="custom-control-indicator"></span><span class="custom-control-description">LD%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB%'><span class="custom-control-indicator"></span><span class="custom-control-description">GB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FB%'><span class="custom-control-indicator"></span><span class="custom-control-description">FB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFFB%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFFB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/FB</span></li>
+
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFH'><span class="custom-control-indicator"></span><span class="custom-control-description">IFH</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFH%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFH%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BUH'><span class="custom-control-indicator"></span><span class="custom-control-description">BUH</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BUH%'><span class="custom-control-indicator"></span><span class="custom-control-description">BUH%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pull%'><span class="custom-control-indicator"></span><span class="custom-control-description">Pull%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Cent%'><span class="custom-control-indicator"></span><span class="custom-control-description">Cent%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Oppo%'><span class="custom-control-indicator"></span><span class="custom-control-description">Oppo%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Soft%'><span class="custom-control-indicator"></span><span class="custom-control-description">Soft%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Med%'><span class="custom-control-indicator"></span><span class="custom-control-description">Med%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Hard%'><span class="custom-control-indicator"></span><span class="custom-control-description">Hard%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Contact%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Zone%'><span class="custom-control-indicator"></span><span class="custom-control-description">Zone%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='F-Strike%'><span class="custom-control-indicator"></span><span class="custom-control-description">F-Strike%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SwStr%'><span class="custom-control-indicator"></span><span class="custom-control-description">SwStr%</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingEight">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#threePitch" aria-expanded="false" aria-controls="threePitch">
+                3-year Pitching
+              </a>
+            </h5>
+          </div>
+
+          <div id="threePitch" class="collapse" role="tabpanel" aria-labelledby="headingEight">
+            <div class="card-block">
+              <ul class="list-group">
+                <div class="row">
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K/9'><span class="custom-control-indicator"></span><span class="custom-control-description">K/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB/9'><span class="custom-control-indicator"></span><span class="custom-control-description">BB/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K/BB'><span class="custom-control-indicator"></span><span class="custom-control-description">K/BB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/9'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K%'><span class="custom-control-indicator"></span><span class="custom-control-description">K%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='K-BB%'><span class="custom-control-indicator"></span><span class="custom-control-description">K-BB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='AVG'><span class="custom-control-indicator"></span><span class="custom-control-description">AVG</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='WHIP'><span class="custom-control-indicator"></span><span class="custom-control-description">WHIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='BABIP'><span class="custom-control-indicator"></span><span class="custom-control-description">BABIP</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LOB%'><span class="custom-control-indicator"></span><span class="custom-control-description">LOB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ERA-'><span class="custom-control-indicator"></span><span class="custom-control-description">ERA-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FIP-'><span class="custom-control-indicator"></span><span class="custom-control-description">FIP-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='xFIP-'><span class="custom-control-indicator"></span><span class="custom-control-description">xFIP-</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='ERA'><span class="custom-control-indicator"></span><span class="custom-control-description">ERA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FIP'><span class="custom-control-indicator"></span><span class="custom-control-description">FIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='E-F'><span class="custom-control-indicator"></span><span class="custom-control-description">E-F</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='xFIP'><span class="custom-control-indicator"></span><span class="custom-control-description">xFIP</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SIERA'><span class="custom-control-indicator"></span><span class="custom-control-description">SIERA</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">GB/FB</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='LD%'><span class="custom-control-indicator"></span><span class="custom-control-description">LD%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='GB%'><span class="custom-control-indicator"></span><span class="custom-control-description">GB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='FB%'><span class="custom-control-indicator"></span><span class="custom-control-description">FB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='IFFB%'><span class="custom-control-indicator"></span><span class="custom-control-description">IFFB%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='HR/FB'><span class="custom-control-indicator"></span><span class="custom-control-description">HR/FB</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='RS'><span class="custom-control-indicator"></span><span class="custom-control-description">RS</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='RS/9'><span class="custom-control-indicator"></span><span class="custom-control-description">RS/9</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Balls'><span class="custom-control-indicator"></span><span class="custom-control-description">Balls</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Strikes'><span class="custom-control-indicator"></span><span class="custom-control-description">Strikes</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pitches'><span class="custom-control-indicator"></span><span class="custom-control-description">Pitches</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Pull%'><span class="custom-control-indicator"></span><span class="custom-control-description">Pull%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Cent%'><span class="custom-control-indicator"></span><span class="custom-control-description">Cent%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Oppo%'><span class="custom-control-indicator"></span><span class="custom-control-description">Oppo%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Soft%'><span class="custom-control-indicator"></span><span class="custom-control-description">Soft%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Med%'><span class="custom-control-indicator"></span><span class="custom-control-description">Med%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Hard%'><span class="custom-control-indicator"></span><span class="custom-control-description">Hard%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Swing%'><span class="custom-control-indicator"></span><span class="custom-control-description">Swing%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='O-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">O-Contact%</span></li>
+                  </div>
+                  <div class="col">
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Z-Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Z-Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Contact%'><span class="custom-control-indicator"></span><span class="custom-control-description">Contact%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='Zone%'><span class="custom-control-indicator"></span><span class="custom-control-description">Zone%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='F-Strike%'><span class="custom-control-indicator"></span><span class="custom-control-description">F-Strike%</span></li>
+                    <li class="list-group-item"><label class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input" value='SwStr%'><span class="custom-control-indicator"></span><span class="custom-control-description">SwStr%</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script type="text/javascript" src="assets/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/tether/js/tether.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/settings.js"></script>
+</html>

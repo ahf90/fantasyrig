@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>FantasyRig</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Modal -->
+			<div class="modal fade" id="modalOne" tabindex="-1" role="dialog"  aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<img src="img/screen4.png"  class="rounded mx-auto d-block img-thumbnail" alt="FantasyRig Example">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="modalTwo" tabindex="-1" role="dialog"  aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<img src="img/screen2.png"  class="rounded mx-auto d-block img-thumbnail" alt="FantasyRig Example">
+						</div>
+					</div>
+				</div>
+			</div>
+      <div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Email me</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a href="mailto:brainydfs@gmail.com">Desktop email app</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=brainydfs@gmail.com" target="_blank">Gmail</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="http://compose.mail.yahoo.com/?to=brainydfs@gmail.com" target="_blank">Yahoo mail</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://mail.live.com/default.aspx?rru=compose&amp;to=brainydfs@gmail.com" target="_blank">Hotmail, Outlook, Live mail</a>
+                  </li>
+                  <li class="list-group-item">
+                    Copy & paste: brainydfs@gmail.com
+                  </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+			<div class="jumbotron">
+				<h1 class="display-5">Thank you for installing FantasyRig</h1>
+				<hr>
+				<p class="lead">FantasyRig allows you to view Sabermetrics for your players in ESPN and Yahoo fantasy baseball.</p>
+				<p class="lead">While looking at players via teams or free agency, click "FantasyRig 2017" to view this season's stats, "FantasyRig 2016" to view last season's stats, and "FantasyRig ROS" to view rest-of-season projected statistics.</p>
+				<p class="lead">Choose which stats to display and projection system to use on the <a href="settings.html" target="_blank">settings</a> page.</p>
+				<div class="row">
+					<div class="col">
+						<a href="#" data-toggle="modal" data-target="#modalOne">
+							<img src="img/screen1.png"  class="rounded mx-auto d-block img-thumbnail" alt="FantasyRig Example">
+						</a>
+					</div>
+					<div class="col">
+						<a href="#" data-toggle="modal" data-target="#modalTwo">
+							<img src="img/screen3.png"  class="rounded mx-auto d-block img-thumbnail" alt="FantasyRig Example">
+						</a>
+					</div>
+				</div>
+				<hr>
+				<p class="text-center"><a href="settings.html" target="_blank" class="btn btn-lg btn-success">Settings</a></p>
+			</div>
+			<div id='faq' class="list-group">
+				<div class="list-group-item list-group-item-action flex-column align-items-start active">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1">FAQ</h5>
+					</div>
+				</div>
+				<div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1">What does stat x mean?</h5>
+					</div>
+						<p class="mb-1">Refer to Fangraphs' glossary for <a href="http://www.fangraphs.com/library/offense/offensive-statistics-list/" target="_blank">hitting</a> and <a href="http://www.fangraphs.com/library/pitching/complete-list-pitching/" target="_blank">pitching</a> statistics</p>
+				</div>
+				<div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1">What projections are you using for ROS?</h5>
+					</div>
+						<p class="mb-1">It defaults to Depth Charts, but there is an option to choose Steamers or ZiPS on the <a href="settings.html" target="_blank">settings</a> page.</p>
+				</div>
+				<div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1">How often does it update?</h5>
+					</div>
+						<p class="mb-1">Daily</p>
+				</div>
+				<div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1">How do you project ROS fantasy points?</h5>
+					</div>
+						<p class="mb-1">If you're in a points league, I collect your league settings and predict based on your selected projected system's ROS projections (default is Depth Charts).  If you have scoring settings not projected by the system (e.g. GIDP, sacrifice flies, any fielding), then those stats will not factor into the projection.</p>
+				</div>
+				<div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1">I love this extension. How can I donate to its development?</h5>
+					</div>
+						<p class="mb-1"><a href="https://www.paypal.com/paypalme/brainydfs" target="_blank">Here</a></p>
+				</div>
+        <div class="list-group-item list-group-item-action flex-column align-items-start">
+					<div class="d-flex w-100 justify-content-between">
+						<h5 class="mb-1">There is a bug/I am having problems.</h5>
+					</div>
+						<p class="mb-1"><a href="#" data-toggle="modal" data-target="#modalEmail">Email me</a> and I will fix it.</p>
+				</div>
+
+			</div>
+		</div>
+
+  </body>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script type="text/javascript" src="assets/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/tether/js/tether.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/install.js"></script>
+</html>
