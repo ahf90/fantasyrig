@@ -1114,6 +1114,8 @@ function updateData() {
     });
 }
 
+// I believe this is supposed to update the data in the user's localStorage
+// I feel like this function doesn't work
 function mergeStorage(source, newData) {
     chrome.storage.local.get(source, function (result) {
         if (typeof result === "undefined" || jQuery.isEmptyObject(result)) {
